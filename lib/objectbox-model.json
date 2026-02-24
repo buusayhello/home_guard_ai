@@ -1,0 +1,124 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:8974831255870065141",
+      "lastPropertyId": "10:4621237047098505837",
+      "name": "HomeDevice",
+      "properties": [
+        {
+          "id": "1:8105830637994087426",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7604676019870404873",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:6750202413780191200",
+          "name": "brand",
+          "type": 9
+        },
+        {
+          "id": "4:2248267615147477292",
+          "name": "modelNumber",
+          "type": 9
+        },
+        {
+          "id": "5:7032575398926269719",
+          "name": "serialNumber",
+          "type": 9
+        },
+        {
+          "id": "6:8378310830085380576",
+          "name": "purchaseDate",
+          "type": 10
+        },
+        {
+          "id": "7:4000069306332462525",
+          "name": "warrantyExpiry",
+          "type": 10
+        },
+        {
+          "id": "8:7297338021509203411",
+          "name": "roomLocation",
+          "type": 9
+        },
+        {
+          "id": "9:2447611004603285252",
+          "name": "notes",
+          "type": 9
+        },
+        {
+          "id": "10:4621237047098505837",
+          "name": "imagePath",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:3038155747572638665",
+      "lastPropertyId": "7:958730561267547455",
+      "name": "MaintenanceRecord",
+      "properties": [
+        {
+          "id": "1:3577596765149948439",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7496391093440504512",
+          "name": "deviceId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:9111613576894686205",
+          "relationTarget": "HomeDevice"
+        },
+        {
+          "id": "3:3637030732385688199",
+          "name": "taskName",
+          "type": 9
+        },
+        {
+          "id": "4:9112053840964915497",
+          "name": "serviceDate",
+          "type": 10
+        },
+        {
+          "id": "5:8372298826960309363",
+          "name": "technicianName",
+          "type": 9
+        },
+        {
+          "id": "6:7675571136232466908",
+          "name": "cost",
+          "type": 8
+        },
+        {
+          "id": "7:958730561267547455",
+          "name": "description",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:3038155747572638665",
+  "lastIndexId": "1:9111613576894686205",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
